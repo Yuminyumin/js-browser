@@ -12,6 +12,6 @@ function handleMouseLeave() {
     title.innerText = "Mouse is gone!";
     }
 
-title.addEventListener("click", handleTitleClick);  
+title.onclick = handleMouseClick;
 title.addEventListener("mouseenter", handleMouseEnter);  
 title.addEventListener("mouseleave", handleMouseLeave);
