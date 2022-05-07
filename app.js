@@ -3,7 +3,12 @@ const loginButton = document.querySelector("#login-form button");
 
 
 function onLoginBtnClick(){
-    console.log(loginInput.value);
+    const username = loginInput.value;
+    if (username ===""){
+        alert("이름을 적어주세요");
+    } else if(username.length > 15) {
+        alert("이름이 너무 길어요");
+    }
 }
 
 
